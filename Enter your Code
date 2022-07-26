@@ -1,0 +1,30 @@
+int main()
+{
+int i = 0;
+char password[20] = "Enmaai";
+char pass[20] = {0};
+printf("Enter your password:> ");
+ 
+
+    for (i = 0; i < 3; i++)
+    {
+        scanf("%s", &pass);
+        if (strcmp(pass,password) == 0)
+        {
+            printf("Password coreect\n");
+            break;
+        }
+        if (i == 2)
+        {
+            printf("Failed -- too much times of wrong passwords.\n");
+            break;
+        }
+        else
+        {
+            printf("Password incorrect, re-enter your password:> \n");
+        }
+
+    }
+
+return 0;
+}
